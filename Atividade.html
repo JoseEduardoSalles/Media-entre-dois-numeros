@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Continuada</title>
+</head>
+<body style="background-color: #34C1FF">
+    <div style="color: black;">
+        <div style="font-size: 150%;">
+
+    <h2>Média entre dois números</h2><br>
+    <b>1°Número: <input id="valor1" type="number" placeholder="N°1"><br></b>
+    <br>
+    <b>2°Número: <input id="valor2" type="number" placeholder="N°2"><br></b>
+    <br>
+
+    <button onclick="media()"><b>Saiba a Média</b></button>
+    <button onclick="limpar()"><b>Limpar</b></button>
+    <div id="div_resultado"><br>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+    function media() {
+     var media =  Number(valor1.value) + Number(valor2.value);
+     div_resultado.innerHTML = (`<br><b><u><span style=color:white;background-color:black> Média: ${media /2} </span>`);
+    }
+    function limpar() {
+        valor1.value = "";
+        valor2.value = "";
+        div_resultado.innerHTML = "";
+    }
+</script>
